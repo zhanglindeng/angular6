@@ -1,0 +1,29 @@
+.dashboard-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #eee;
+
+
+  .sidenav-content {
+    //border-left: 1px inset #ccc;
+  }
+
+  .mat-sidenav {
+    width: 230px;
+
+    //border-right: 1px solid #ccc;
+  }
+
+  .content {
+    padding: 1rem;
+  }
+}
+
+
+
+
+
+

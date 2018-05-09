@@ -1,0 +1,98 @@
+.sidenav {
+  .app-name {
+    background-color: #485bcc;
+    color: #fff;
+    font-size: 1rem;
+    margin: 0;
+    height: 64px;
+    line-height: 64px;
+    text-align: center;
+    overflow: hidden;
+  }
+
+  @media screen and (max-width: 599px) {
+    .app-name {
+      height: 56px;
+      line-height: 56px;
+    }
+  }
+
+  // 去掉最后一个的阴影
+  .mat-expansion-panel:not([class*=mat-elevation-z]) {
+    box-shadow: none;
+  }
+
+  // home
+  .home {
+    margin-top: 1rem;
+  }
+
+  // no-links
+  .no-links {
+    height: 48px;
+    line-height: 48px;
+    border-bottom: 1px solid #ddd;
+
+    > a {
+      text-decoration: none;
+      color: rgba(0, 0, 0, .87);
+      display: block;
+      padding: 0 24px;
+
+      &:hover {
+        color: #fff;
+        background-color: #485bcc;
+      }
+
+      &.active {
+        color: #fff;
+        background-color: #485bcc;
+      }
+    }
+
+  }
+
+  .mat-expansion-panel {
+    border-bottom: 1px solid #ddd;
+
+    /deep/ .mat-expansion-panel-body {
+      padding: 0;
+    }
+
+    // links
+    .links {
+      > a {
+        display: block;
+        padding: 1rem 1rem 1rem 2rem;
+        text-decoration: none;
+        color: rgba(0, 0, 0, .8);
+
+        &:hover {
+          color: #fff;
+          background-color: #485bcc;
+        }
+
+        &.active {
+          color: #fff;
+          background-color: #485bcc;
+        }
+      }
+    }
+  }
+
+  .mat-expanded {
+    margin: 0;
+
+    mat-expansion-panel-header {
+      border-bottom: 1px solid #ddd;
+    }
+
+    mat-panel-title {
+      color: #3f51b5;
+      font-weight: bold;
+    }
+  }
+
+}
+
+

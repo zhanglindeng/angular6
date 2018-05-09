@@ -1,0 +1,38 @@
+<div class="sidenav">
+  <h1 class="app-name">Application Name</h1>
+
+  <mat-accordion>
+
+    <div class="no-links home">
+      <a href="#">首页</a>
+    </div>
+
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          系统设置
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+
+      <div class="links">
+        <a *ngFor="let link of links" href="{{ link.url }}" [ngClass]="{'active': link.active}">{{ link.name }}</a>
+      </div>
+
+    </mat-expansion-panel>
+
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          访问日志
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+
+      <div class="links">
+        <a *ngFor="let link of links" href="{{ link.url }}" [ngClass]="{'active': link.active}">{{ link.name }}</a>
+      </div>
+
+    </mat-expansion-panel>
+
+
+  </mat-accordion>
+</div>
