@@ -8,11 +8,15 @@ import { Component, OnInit } from '@angular/core';
 export class DashboardComponent implements OnInit {
 
   opened = true;
+  loading = true;
 
   constructor() {
   }
 
   ngOnInit() {
+    setTimeout(() => {
+      this.loading = false;
+    }, 3000);
   }
 
 }

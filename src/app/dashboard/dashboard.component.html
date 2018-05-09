@@ -8,8 +8,10 @@
 
     <app-header [sidenav]="sidenav"></app-header>
 
-    <div class="content">
-      <router-outlet></router-outlet>
+    <div class="content" [ngClass]="{'spinner-1': loading}">
+      <div [ngClass]="{'loading': loading}">
+        <router-outlet></router-outlet>
+      </div>
     </div>
 
   </mat-sidenav-content>
