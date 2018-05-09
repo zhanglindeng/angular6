@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { LayoutModule } from '@angular/cdk/layout';
 import {
   MatAutocompleteModule, MatBadgeModule, MatBottomSheetModule,
   MatButtonModule, MatButtonToggleModule, MatCardModule, MatCheckboxModule, MatChipsModule, MatDatepickerModule,
@@ -52,6 +53,7 @@ import {
     MatTooltipModule,
     MatTreeModule,
     MatFormFieldModule,
+    LayoutModule,
   ],
   declarations: [],
   exports: [
@@ -92,6 +94,7 @@ import {
     MatTooltipModule,
     MatTreeModule,
     MatFormFieldModule,
+    LayoutModule,
   ]
 })
 export class MaterialModule {
