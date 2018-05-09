@@ -8,9 +8,9 @@
 
     <app-header [sidenav]="sidenav"></app-header>
 
-    <div class="content" [ngClass]="{'spinner-1': loading}">
+    <div class="content" [ngClass]="{'spinner-1': loading}" #content>
       <div [ngClass]="{'loading': loading}">
-        <router-outlet></router-outlet>
+        <router-outlet (activate)="onActivate($event, content)"></router-outlet>
       </div>
     </div>
 

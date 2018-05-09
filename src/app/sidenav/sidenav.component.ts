@@ -17,11 +17,11 @@ export class SidenavComponent implements OnInit {
 
   ngOnInit() {
     this.links = [
-      {name: 'test1', url: '/home', active: false},
-      {name: 'test2', url: '#', active: false},
-      {name: 'test3', url: '#', active: false},
-      {name: 'test4', url: '#', active: false},
-      {name: 'test5', url: '#', active: false},
+      {name: 'test1', url: '/url0', active: false},
+      {name: 'log', url: '/home/log', active: false},
+      {name: 'test3', url: '/url1', active: false},
+      {name: 'test4', url: '/url2', active: false},
+      {name: 'test5', url: '/url3', active: false},
     ];
   }
 

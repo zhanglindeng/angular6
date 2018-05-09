@@ -4,7 +4,7 @@
   <mat-accordion>
 
     <div class="no-links home">
-      <a href="#" [ngClass]="{'active': router.isActive('home', true)}">首页</a>
+      <a routerLink="/home" routerLinkActive="active" [routerLinkActiveOptions]="{'exact': true}">首页</a>
     </div>
 
     <mat-expansion-panel>
@@ -15,7 +15,8 @@
       </mat-expansion-panel-header>
 
       <div class="links">
-        <a *ngFor="let link of links" href="{{ link.url }}" [ngClass]="{'active': router.url === link.url}">{{ link.name }}</a>
+        <a *ngFor="let link of links" routerLink="{{ link.url }}" routerLinkActive="active"
+           [routerLinkActiveOptions]="{'exact': true}">{{ link.name }}</a>
       </div>
 
     </mat-expansion-panel>
@@ -28,7 +29,8 @@
       </mat-expansion-panel-header>
 
       <div class="links">
-        <a *ngFor="let link of links" href="{{ link.url }}" [ngClass]="{'active': router.url === link.url}">{{ link.name }}</a>
+        <a *ngFor="let link of links" routerLink="{{ link.url }}" routerLinkActive="active"
+           [routerLinkActiveOptions]="{'exact': true}">{{ link.name }}</a>
       </div>
 
     </mat-expansion-panel>

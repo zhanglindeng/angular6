@@ -19,4 +19,8 @@ export class DashboardComponent implements OnInit {
     }, 3000);
   }
 
+  onActivate(event, mainContainer) {
+    console.log(event);
+    mainContainer.scrollTop = 0;
+  }
 }
