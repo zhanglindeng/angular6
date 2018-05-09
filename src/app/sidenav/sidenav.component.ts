@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-sidenav',
@@ -10,13 +10,14 @@ export class SidenavComponent implements OnInit {
 
   links: Array<Object>;
 
-  constructor(private route: ActivatedRoute) {
+  constructor(private router: Router) {
+    console.log(router.url);
+    console.log(router.isActive('home', true));
   }
 
   ngOnInit() {
-    console.log(this.route);
     this.links = [
-      {name: 'test1', url: '/home', active: true},
+      {name: 'test1', url: '/home', active: false},
       {name: 'test2', url: '#', active: false},
       {name: 'test3', url: '#', active: false},
       {name: 'test4', url: '#', active: false},
