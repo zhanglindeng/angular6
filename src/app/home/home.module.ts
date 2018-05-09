@@ -5,8 +5,8 @@ import { HomeRoutingModule } from './home-routing.module';
 import { HomeComponent } from './home.component';
 import { SharedModule } from '../shared/shared.module';
 import { MaterialModule } from '../material/material.module';
-import { MatGridListModule, MatCardModule, MatMenuModule, MatIconModule, MatButtonModule } from '@angular/material';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { LogComponent } from './log/log.component';
 
 @NgModule({
   imports: [
@@ -14,13 +14,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     SharedModule,
     MaterialModule,
     HomeRoutingModule,
-    MatGridListModule,
-    MatCardModule,
-    MatMenuModule,
-    MatIconModule,
-    MatButtonModule,
   ],
-  declarations: [HomeComponent, DashboardComponent]
+  declarations: [HomeComponent, DashboardComponent, LogComponent]
 })
 export class HomeModule {
 }
