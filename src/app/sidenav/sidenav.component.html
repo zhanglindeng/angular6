@@ -4,19 +4,25 @@
   <mat-accordion>
 
     <div class="no-links home">
-      <a routerLink="/home" routerLinkActive="active" [routerLinkActiveOptions]="{'exact': true}">首页</a>
+      <a routerLink="/home" routerLinkActive="active" [routerLinkActiveOptions]="{'exact': true}">
+        <mat-icon>home</mat-icon>
+        首页
+      </a>
     </div>
 
     <mat-expansion-panel>
       <mat-expansion-panel-header>
         <mat-panel-title>
+          <mat-icon>settings</mat-icon>
           系统设置
         </mat-panel-title>
       </mat-expansion-panel-header>
 
       <div class="links">
         <a *ngFor="let link of links" routerLink="{{ link.url }}" routerLinkActive="active"
-           [routerLinkActiveOptions]="{'exact': true}">{{ link.name }}</a>
+           [routerLinkActiveOptions]="{'exact': true}">
+          {{ link.name }}
+        </a>
       </div>
 
     </mat-expansion-panel>
@@ -24,13 +30,16 @@
     <mat-expansion-panel [expanded]="router.isActive('home', false)">
       <mat-expansion-panel-header>
         <mat-panel-title>
+          <mat-icon>list</mat-icon>
           访问日志
         </mat-panel-title>
       </mat-expansion-panel-header>
 
       <div class="links">
         <a *ngFor="let link of links" routerLink="{{ link.url }}" routerLinkActive="active"
-           [routerLinkActiveOptions]="{'exact': true}">{{ link.name }}</a>
+           [routerLinkActiveOptions]="{'exact': true}">
+          {{ link.name }}
+        </a>
       </div>
 
     </mat-expansion-panel>
