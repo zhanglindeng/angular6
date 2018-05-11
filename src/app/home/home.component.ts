@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { LoaderService } from '../services/loader.service';
 
 @Component({
   selector: 'app-home',
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  constructor(private loader: LoaderService) {
+  }
 
   ngOnInit() {
+    console.log('ngOnInit');
+    this.loader.show();
+    setTimeout(() => {
+      console.log('timeout');
+      this.loader.hide();
+    }, 3000);
   }
 
 }
