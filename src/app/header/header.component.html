@@ -8,11 +8,24 @@
 
     <span class="header-spacer"></span>
 
+    <button mat-icon-button>
+      <mat-icon class="header-mat-icon" matBadge="3" matBadgeColor="accent">notifications</mat-icon>
+    </button>
     <button mat-button [matMenuTriggerFor]="menu">Admin</button>
     <mat-menu #menu="matMenu">
-      <button mat-menu-item>关于我</button>
-      <button mat-menu-item>退出</button>
+      <button mat-menu-item>
+        <mat-icon style="margin-right: 0">account_circle</mat-icon>
+        关于我
+      </button>
+      <button mat-menu-item>
+        <mat-icon style="margin-right: 0">power_settings_new</mat-icon>
+        退出
+      </button>
     </mat-menu>
+    <!--<mat-icon class="header-mat-icon" matBadge="10" matBadgeColor="accent">notifications</mat-icon>-->
+    <!--<button mat-icon-button title="退出">-->
+      <!--<mat-icon>power_settings_new</mat-icon>-->
+    <!--</button>-->
   </mat-toolbar>
 </div>
 
